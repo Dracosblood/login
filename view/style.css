@@ -1,0 +1,23 @@
+.contenedor{
+    width: 1280px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 900px;
+}
+.contenedorcaja{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.tamano{
+    width: 100px;
+}
+.btnlogin{
+    position: relative;
+    left: 130px;
+    
+}
