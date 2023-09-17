@@ -5,7 +5,7 @@
         $hash = password_hash($contrasena, PASSWORD_DEFAULT);
 
        require_once($_SERVER["DOCUMENT_ROOT"] . "/config/database.php");
-       $result = $mysqli->query("INSERT INTO usuarios (correo, contrasena) VALUES ('$correo', '$contrasena')");
+       $result = $mysqli->query("INSERT INTO users (correo, contrasena) VALUES ('$correo', '$hash')");
 
        if($result) {
         header("Location: /index.php");

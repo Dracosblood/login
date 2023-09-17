@@ -11,22 +11,25 @@
 <body class="contenedor">
     
 <section class="contenedorcaja">
-  <form action="" method="post">
+  <form action="/handle_db/loginconect.php" method="POST">
     <div class="mb-3 row">
         <h1>Login</h1>
          <label  class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-        <input type="email" class="form-control tamano" placeholder="example@email.com">
+        <input type="email" class="form-control tamano" placeholder="example@email.com" name="correo">
         </div>
     </div>
     <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
         <div class="col-sm-10">
-        <input type="password" class="form-control tamano" id="inputPassword">
+        <input type="password" class="form-control tamano" id="inputPassword" name="contrasena">
         </div>
     </div>
     <div class="col-auto btnlogin">
         <button type="submit" class="btn btn-primary mb-2">  -> Login <- </button>
+    </div>
+    <div>
+    <p>Have you not a account?</p><a href="/index.php">Register Now</a>
     </div>
   </form>
 </section>

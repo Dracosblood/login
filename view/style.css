@@ -21,3 +21,9 @@
     left: 130px;
     
 }
+
+.principal{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
