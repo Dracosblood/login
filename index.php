@@ -25,9 +25,19 @@
                 </div>
             </div>
             <div class="col-auto btnlogin">
-                <button type="submit" class="btn btn-primary mb-2"><a href="/view/edit.php" class="link">  -> Register <- </a></button>
+                <button type="submit" class="btn btn-primary mb-2"> -> Register <-</button>
             </div>
             <div>
+                <?php
+                    session_start();
+                    if($_SESSION["duplicado"]){
+                        echo "<script>alert('El correo ya esta registrado.')</script>";
+                        $_SESSION["duplicado"] = false;
+                         "<br>";
+                    }
+                   
+                ?>
+                
             <p>Have you a account?</p><a href="/view/login.php">Login</a>
             </div>
         </form>

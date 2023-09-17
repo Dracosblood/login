@@ -17,6 +17,7 @@
             header("Location: /view/dashboard.php");
         }
        } else{
+        
         header("Location: /view/login.php");
        }
        
