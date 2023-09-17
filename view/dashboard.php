@@ -20,7 +20,7 @@ if (!isset($_SESSION["user_data"])){
 <body>
     <h1>hola</h1>
     <?php
-    session_start();
+    
     $correo = $_SESSION["user_data"]["correo"];
     echo "<h1>Bienvenido $correo</h1>";
     ?>

@@ -9,7 +9,12 @@
             $result = $mysqli->query("INSERT INTO users (correo, contrasena) VALUES ('$correo', '$hash')");
 
             if($result) {
-             header("Location: /index.php");
+                $data = $mysqli->query("SELECT * FROM users WHERE correo = '$correo'");
+                $data = $data->fetch_assoc();
+                session_start();
+                $_SESSION["user_data"] = $data;
+
+             header("Location: /view/dashboard.php");
             } else{
              echo "error al registrar usuario";
             }
