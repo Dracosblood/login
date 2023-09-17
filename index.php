@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-auto btnlogin">
-                <button type="submit" class="btn btn-primary mb-2">  -> Register <- </button>
+                <button type="submit" class="btn btn-primary mb-2"><a href="/view/edit.php" class="link">  -> Register <- </a></button>
             </div>
             <div>
             <p>Have you a account?</p><a href="/view/login.php">Login</a>

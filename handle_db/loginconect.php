@@ -12,8 +12,12 @@
         echo "Correo Encontrado";
 
         if(password_verify($contrasena, $result["contrasena"])){
+            session_start();
+            $_SESSION["user_data"] = $result;
             header("Location: /view/dashboard.php");
         }
+       } else{
+        header("Location: /view/login.php");
        }
        
     }
