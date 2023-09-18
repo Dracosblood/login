@@ -30,8 +30,14 @@
       <div class="col-auto btnlogin">
           <button type="submit" class="btn btn-primary mb-2"> Star coding now </button>
       </div>
-      <div>
-      <p>Dont have an account yet?</p> <a href="/index.php">Register</a>
+      <div class="icon2">
+                <img class="icon" src="/assets/Google.svg">
+                <img class="icon" src="/assets/Facebook.svg">
+                <img class="icon" src="/assets/Twitter.svg">
+                <img class="icon" src="/assets/Gihub.svg">
+      </div>
+      <div class="dev">
+      <p>Dont have an account yet?</p><a href="/index.php">Register</a>
     </section>
   </form>
 </section>
