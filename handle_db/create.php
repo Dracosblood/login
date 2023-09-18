@@ -19,7 +19,7 @@
              echo "error al registrar usuario";
             }
         } catch (mysqli_sql_exception $e){
-            if ( $mysqli->errno === 1062){
+            if ($mysqli->errno === 1062){
                 session_start();
                 $_SESSION["duplicado"] = true;
                 header("Location: /index.php");

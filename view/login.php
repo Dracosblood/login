@@ -9,8 +9,9 @@
     <title>Login</title>
 </head>
 <body class="contenedor">
-    
-<section class="contenedorcaja">
+
+
+<section class="list-group list-group-flush cards">
   <form action="/handle_db/loginconect.php" method="POST">
     <div class="mb-3 row">
         <h1>Login</h1>
@@ -25,12 +26,13 @@
         <input type="password" class="form-control tamano" id="inputPassword" name="contrasena">
         </div>
     </div>
-    <div class="col-auto btnlogin">
-        <button type="submit" class="btn btn-primary mb-2">  -> Login <- </button>
-    </div>
-    <div>
-    <p>Have you not a account?</p><a href="/index.php">Register Now</a>
-    </div>
+    <section class="regis">
+      <div class="col-auto btnlogin">
+          <button type="submit" class="btn btn-primary mb-2"> Star coding now </button>
+      </div>
+      <div>
+      <p>Dont have an account yet?</p> <a href="/index.php">Register</a>
+    </section>
   </form>
 </section>
     
